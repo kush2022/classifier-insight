@@ -1,6 +1,6 @@
 import streamlit as st 
 from pathlib import Path
-from streamlit_lottie import st_lottie
+# from streamlit_lottie import st_lottie
 import json
 
 from sklearn import datasets
@@ -59,17 +59,17 @@ with col1:
 
 with open(machine_lottie, 'r') as file:
     url = json.load(file)
-with open(sidelottie, 'r') as file:
-    sidelottie = json.load(file)
+# with open(sidelottie, 'r') as file:
+#     sidelottie = json.load(file)
 
 
 
-with col2:
-    st_lottie(url, height=120, width=120)
+# with col2:
+#     st_lottie(url, height=120, width=120)
 
 
-with st.sidebar:
-    st_lottie(sidelottie, height=130, width=130)
+# with st.sidebar:
+#     st_lottie(sidelottie, height=130, width=130)
 
 
 
